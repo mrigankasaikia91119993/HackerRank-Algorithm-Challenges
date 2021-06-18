@@ -6,7 +6,7 @@ def min_transmitter(a, b):
 	a.sort()
 	c = len(a)
 	lastH = a[c - 1] #the number of the last house .
-	range = 2 * b + 1 #the total number of houses                                        covered by the antenna.
+	range = 2 * b + 1 #the total number of houses covered by the antenna.
 	
 	div = lastH // range
 	if lastH % range > 0:
@@ -15,8 +15,8 @@ def min_transmitter(a, b):
 		min_transmitter = div
 	return min_transmitter
 
-a = [7, 2, 4, 6, 5, 9, 2, 11] #house numbers of the                     Hackerland city that needed to be                              covered my antenna.
+a = [7, 2, 4, 6, 5, 9, 2, 11] #house numbers of the Hackerland city that needed to be covered my antenna.
 
 b = 2         #range of an single antenna
 
-print(min_transmitter(a, b)) #feel free to input                            your own parameters and play around.
+print(min_transmitter(a, b)) #feel free to input your own parameters and play around.
